@@ -19,4 +19,4 @@ jobs:
           pip install pywebio openpyxl
       - name: Run the app
         run: |
-          python app.py
+          python webby.py
