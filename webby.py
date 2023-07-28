@@ -1,5 +1,4 @@
 import openpyxl
-
 from pywebio import start_server
 from pywebio.input import *
 from pywebio.output import *
@@ -42,4 +41,6 @@ def App():
     ]
     put_table(data)
 
-start_server(App, port=5000, debug=True)
+# Use 0.0.0.0 as the host to make the app accessible from any machine
+# Use port 8080, which is the default port for GitHub Pages
+start_server(App, port=8080, host='0.0.0.0')
